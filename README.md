@@ -1,1 +1,3 @@
 # GameOfLife
+## Contributor
+Nicolas Romero
