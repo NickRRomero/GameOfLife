@@ -2,16 +2,16 @@
 import numpy as np
 import random
 
-def get_user_input():
+def greet_user():
+   """
+   Provide the user with instructions for the GameOfLife.
+   """
    print """Welcome to The Game Of Life.\n""" 
-   print """Please enter X for the size of the game board: X * X\n"""
-   return input('Size: ')
 
-def create_empty_board(board_size):
-   return np.zeros((board_size, board_size), dtype=np.int8, order='C')
-
+def create_board():
+   return np.random.randint(2, size=(10, 10))
 
 
 if __name__ == "__main__":
-   board_size = get_user_input()
-   print create_empty_board(board_size)
+   greet_user()
+   print create_board()
